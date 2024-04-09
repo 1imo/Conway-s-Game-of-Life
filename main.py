@@ -38,8 +38,6 @@ while True:
             else:
                 if live_neighbors == 3:  # Rule 4
                     next_board[i][j].set_state(True)  # Is born (Rule 4)
-                else:
-                    next_board[i][j].set_state(False)  # Stays dead
 
     # Update the original board with the next state
     board = next_board
